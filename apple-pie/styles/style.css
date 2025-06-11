@@ -23,9 +23,7 @@ body {
 /* STYLES */
 /* Write your CSS below */
 
-*, html {
-  
-}
+/* Header style */
 .hero-image {
   background-image: url("/apple-pie/images/apple-pie.jpg");
   height: 400px;
@@ -46,4 +44,59 @@ body {
 
 .hero-text h1 {
   font-size: 40px;
+}
+
+/* Introduction style */
+#intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10vh 15vh;
+    
+}
+
+.intro-text {
+  text-align: justify;
+}
+
+.recipe-info img{
+  margin: 0 500px;
+  object-fit: cover;
+}
+
+/* Ingredients style */
+
+#ingredients {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-sizing: border-box;
+    padding: 0 15vh;
+    justify-content: center;
+}
+
+.ingredients-list ul {
+  list-style-type: "-";
+  margin: 10px 15px;
+}
+
+/* Instructions style */
+
+#directions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    box-sizing: border-box;
+    padding: 0 15vh;
+    justify-content: center;
+}
+
+.directions-list ol {
+  
 }
