@@ -55,17 +55,26 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: 10vh 15vh;
-    
+    padding: 3vh 15vh;
+    width: 80%;
+    margin: 0 auto;
+
 }
 
 .intro-text {
   text-align: justify;
 }
 
-.recipe-info img{
-  margin: 0 500px;
-  object-fit: cover;
+/* Images style */
+
+.recipe-info img,
+.cooking-info img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  align-items: center;
 }
 
 /* Ingredients style */
@@ -76,13 +85,21 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     box-sizing: border-box;
-    padding: 0 15vh;
+    padding: 3vh 15vh;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .ingredients-list ul {
   list-style-type: "-";
   margin: 10px 15px;
+}
+
+.cooking-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 /* Instructions style */
@@ -93,10 +110,31 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     box-sizing: border-box;
-    padding: 0 15vh;
+    padding: 3vh 15vh;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .directions-list ol {
-  
+  list-style: none;
+}
+
+.directions-list ol > li {
+  counter-increment: listcounter;
+}
+
+.directions-list ol > li::before {
+  content: counter(listcounter) ")";
+}
+
+.directions-list li {
+  text-align: left;
+  margin: 10px 15px;
+}
+
+.custom-hr {
+  background-color: black;
+  height: 2px;
+  width: 100%;
 }
